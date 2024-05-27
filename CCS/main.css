@@ -8,7 +8,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-
 /* ETIQUETAS ELEMENTOS*/
 hr{
   width: 50%;
@@ -56,6 +55,7 @@ p{  color: #0f0f0f;
 
 .BGnegro{
   background-color: #0f0f0f;
+  padding: 10px;
 }
 
 .caja1{
@@ -66,8 +66,14 @@ p{  color: #0f0f0f;
 .cajaBox{
   margin-top: 20px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+/*   flex-direction: row;
+   flex-wrap: nowrap;
+  height: 150px; */
+  
+}
+.cajaBox img{
+  width: 50%;
+
 }
 
 .celeste{
@@ -76,24 +82,27 @@ p{  color: #0f0f0f;
   padding:  8px;
 }
 
-.containerpie {
-  display: flex;
-  align-items: center; /* Centra verticalmente la imagen y el texto */
-}
-.containerpie1 {
-  display: flex; 
-}
-
-.container {
+.container{
   /* width: 1900px; */
   display: flex;
-  align-items: center; /* Centra verticalmente la imagen y el texto */
-  padding: 10px;
+  align-items: center;/* Centra verticalmente la imagen y el texto */
+  padding: 6px; 
 }
-.container2 {
+
+.container2{
   display: flex;
   align-items: center; /* Centra verticalmente la imagen y el texto */
   padding: 10px;
+  width: 25%;
+}
+
+.containerpie{
+  display: flex;
+  align-items: center; /* Centra verticalmente la imagen y el texto */
+}
+
+.containerpie1{
+  display: flex; 
 }
 
 .div-nav{
@@ -115,7 +124,7 @@ p{  color: #0f0f0f;
   width: 60px;
 }
 
-.imagen {
+.imagen{
   max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
   margin-right: 10px; /* Espacio entre la imagen y el texto */
 }
@@ -175,6 +184,8 @@ p{  color: #0f0f0f;
     list-style-type: none;
     display: flex;
     gap: 1rem;
+    justify-content: end;
+    padding: 15px;
 }
 
 .nav-list li a {
@@ -182,13 +193,14 @@ p{  color: #0f0f0f;
     color: #1c1c1c;
 }
 
-.piemarca{
-  width: 50%;
+
+.piemarca1{
+  display: none;
 }
 
 .pos1{
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end; 
 }
 
 
@@ -197,9 +209,9 @@ p{  color: #0f0f0f;
 .productos {
   padding: 0 3px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 } 
 
 .productos figure {
@@ -210,7 +222,6 @@ p{  color: #0f0f0f;
   padding: 6px;
   max-width: 250px;
   min-width:  220px;
-  
 }
 
 .productos figure p {
@@ -224,11 +235,12 @@ p{  color: #0f0f0f;
   height: 145px; 
   display:block;
   margin:auto;
-
 }
 
 .productos figure img:hover{
   transform: scale(2.2);
+  border: solid rgb(104, 66, 194) 1px;
+  border-radius: 5px;
 }
 
 .productos figure figcaption {
@@ -264,17 +276,25 @@ p{  color: #0f0f0f;
 }
 .tres{
   background-color: #72DBF2;
-  height: 75px;
+  height: 60px;
+  justify-content: flex-end;
   /* width: 900px; */
 }
 
 .unoa{
   display: flex
 }
+.noaplica{
+  width: 100%;
+  
+/*   
+  justify-content: flex-end; */
+  /* width: 70%; */
+}
 .uno{
   /* background-color: #f2e772; */
   height: 160px;
-  width: 200px;
+  /* width: 200px; */
 }
 
 
@@ -282,35 +302,47 @@ p{  color: #0f0f0f;
 
 /* Extra small devices (600px and down) */
 /* @media only screen and (max-width: 600px) { */
-    @media only screen and (max-width: 600px) {
-        .div-nav{
-            background-color:greenyellow;
-        }
-    }
-    /* Small devices (600px and up) */
-    /* @media only screen and (min-width: 600px) { */
-    @media only screen and (min-width: 600px) {
-        .div-nav{
-            background-color:red;
-            font-size: 14px;
-        }
-    }
+    /* @media only screen and (max-width: 600px) {} */
   /* Medium devices (768px and up) */
   /* @media only screen and (min-width: 768px) { */
-    @media only screen and (min-width: 768px) {
-        .div-nav{
-            background-color:blue;
-            font-size: 28px;;
-        }
-    } 
+    /* @media only screen and (min-width: 768px) {} */
 
+/* 1er breakpoint */
+/* @media (min-width:768px){ */
+@media (min-width:600px){
+  .productos figure button {
+    background-color: orange;
+  }
+  .productos{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
+  .productos figure {
+    max-width: 200px;
+    min-width:  200px; 
+    margin-inline: 60px;
+   }
+}
+  /*pie*/
+  .piemarca1{
+    display: flex;
+    width: 50%;
+  }
+  .piemarca{
+  
+    width: 50%;
+  }
 
-
-
-
-
-
-
-
+/* 2do breakpoint */
+@media (min-width:1024px){
+  .productos figure button {
+    background-color: blue;
+  }
+  .productos figure {
+    max-width: 200px;
+    min-width:  200px; 
+    margin-inline: 1px;
+   }
+}
   /* FIN  */

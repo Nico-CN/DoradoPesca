@@ -1,6 +1,9 @@
 *{
     font-family: Roboto;
 }
+input{
+    text-decoration: none;
+}
 h1{
     color: #73715F;    
     font-size: 30px;
@@ -28,9 +31,7 @@ p{
     gap: 10px;
     grid-template-areas: 
     'contacto contacto'
-    'info formulario'
-    
-    ;
+    'info formulario';
 }
 .contacto{
     grid-area: contacto;
@@ -39,7 +40,7 @@ p{
 }
 .info{
     grid-area: info;  
-    margin-left: 100px;
+    margin-left: 200px;
 }
 .info p {
     margin-left: 20px;
@@ -58,6 +59,14 @@ p{
     border-radius: 15px;
     border-color:#72DBF2 ;
     border-width: 3px;
+    cursor: pointer;
+}
+.formulario form input:hover{
+    border-color:#F2E772 ;
+}
+
+.formulario form textarea:hover{
+    border-color:#F2E772 ;
 }
 
 button{
@@ -69,6 +78,7 @@ button{
 }
 button:hover{
     transform: scale(1.1);
+    background-color: #72DBF2;
 }
 main{
     grid-area: main;

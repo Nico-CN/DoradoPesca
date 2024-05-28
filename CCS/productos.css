@@ -1,15 +1,3 @@
-header {
-    display: flex;
-    flex-direction: column;
-    height: 161px;
-}
-.upper {
-    flex: 2;
-}
-.down {
-    background: var(--Celes, #72DBF2);
-    flex: 1;
-}
 * {
     font-family: "Roboto";
     margin: 0;
@@ -117,12 +105,6 @@ hr {
 }
 .info-icon {
     max-width: 160px;
-}
-
-
-footer {
-    background: black;
-    height: 338px;
 }
 /*fuentes*/
 .roboto-thin {

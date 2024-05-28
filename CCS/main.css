@@ -1,26 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-*{margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	border: none;
-	outline: none;
-  font-family: "Roboto", sans-serif;
-}
-
 /* ETIQUETAS ELEMENTOS*/
 hr{
-  width: 50%;
   height: 2px;
-  background-color: gray;
-  margin: 20px auto;
-  width: 70%;
+  background-color:#73715F;
+  margin: 10px 3%;
 }
 
 h1,h2{
-  font-size: 32px;
-  color: #726d6d;
+  font-size: 30px;
+  color: #73715F;
   margin: 15px;
+  font-weight: 800;
 }
 
 h5{
@@ -38,7 +27,9 @@ nav{
   background-color:#72DBF2;
 }
 
-p{  color: #0f0f0f;
+.parrafo{ 
+  color: #0f0f0f;
+  font-size: 0.8em;
 }
 
 /*CLASES*/
@@ -128,8 +119,12 @@ p{  color: #0f0f0f;
   max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
   margin-right: 10px; /* Espacio entre la imagen y el texto */
 }
+.imagen1{
+  height: 100px;
+  padding: 10px;
+}
 .imagen2{
-  height: 40px;
+  height: 70px;
   padding: 10px;
 }
 
@@ -145,13 +140,15 @@ p{  color: #0f0f0f;
 .indexflex {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-self: stretch;
 }
 
 .lineas {
-  border: solid;
+  border: groove;
   border-top-style: none;
   border-bottom-style: none;
+  color: #73715F
 }
 
 .logo{
@@ -207,12 +204,11 @@ p{  color: #0f0f0f;
 /* grilla productos*/
 
 .productos {
-  padding: 0 3px;
+  padding: 10px 1em;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-} 
+  align-items: center
+}
 
 .productos figure {
   /* width: 20%; */
@@ -244,17 +240,33 @@ p{  color: #0f0f0f;
 }
 
 .productos figure figcaption {
-  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 300;
   margin-top: 10px;
   margin-left: 10px;
   text-align: left;
 }
 
-.productos figure button {
+.productos figure figcaption div{
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.productos figure div button {
   background-color: #f2e772;
   border-radius: 6px;
-  padding: 10px;
+  height: 25px;
+  width: 100px;
+  font-size: 14px;
   margin: 0 10px 0 10px;
+}
+
+.productos figure div button:hover{
+  background-color: #72DBF2;
+  color: black;
 }
 
 .qui{
@@ -268,11 +280,12 @@ p{  color: #0f0f0f;
   text-align: center;
 }
 
-.text-precio{
-  font-size: 15px;
+.productos figure div .text-precio{
+  font-weight: 600;
+  margin: 2px 10px
 }
-.text-producto{
-  font-size: 16px;
+.productos figure .text-producto{
+  font-weight: 400;
 }
 .tres{
   background-color: #72DBF2;
@@ -309,7 +322,9 @@ p{  color: #0f0f0f;
 
 /* 1er breakpoint */
 /* @media (min-width:768px){ */
-@media (min-width:600px){
+@media (min-width:600px)
+/*Body*/
+{
   .productos figure button {
     background-color: orange;
   }
@@ -317,12 +332,19 @@ p{  color: #0f0f0f;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .productos figure {
     max-width: 200px;
     min-width:  200px; 
     margin-inline: 60px;
-   }
+  }
+  .imagen1{
+    height: 100px;
+    padding: 10px;
+  }
+  .imagen2{
+    height: 70px;
+    padding: 10px;
+  }
 }
   /*pie*/
   .piemarca1{
@@ -335,14 +357,27 @@ p{  color: #0f0f0f;
   }
 
 /* 2do breakpoint */
-@media (min-width:1024px){
+@media (min-width:1024px)
+/*Body*/
+{
   .productos figure button {
-    background-color: blue;
+    background-color: #F2E772;
+    border-radius:6px;
+    border-color: transparent;
   }
+  
   .productos figure {
-    max-width: 200px;
-    min-width:  200px; 
-    margin-inline: 1px;
-   }
+    max-width: 300px;
+    min-width:  300px; 
+    margin-inline: 10px;
+  }
+  .imagen1{
+    height: 100px;
+    padding: 10px;
+  }
+  .imagen2{
+    height: 70px;
+    padding: 10px;
+  }
 }
   /* FIN  */

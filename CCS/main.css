@@ -55,15 +55,15 @@ nav{
 }
 
 .cajaBox{
-  margin-top: 20px;
+  margin: 10px 0px;
+  padding: 10px 32px;
   display: flex;
-/*   flex-direction: row;
-   flex-wrap: nowrap;
-  height: 150px; */
-  
+  background-color: #7e989d;
+  justify-content: space-around;
+  height: 140px;
 }
 .cajaBox img{
-  width: 50%;
+  width: 20%;
 
 }
 

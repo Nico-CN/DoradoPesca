@@ -73,6 +73,13 @@ button{
     background-color: #F2E772;
     cursor: pointer;
 }
+buttonC{
+    width: 250px;
+    height: 39px;
+    border-radius: 6px;
+    background-color: #F2E772;
+    cursor: pointer;
+}
 button:hover{
     transform: scale(1.1);
     background-color: #72DBF2;

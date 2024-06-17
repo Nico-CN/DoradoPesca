@@ -71,9 +71,9 @@ const validarFormulario = (idFormulario) => {
       
       Toast.fire({
         icon: 'error',
-        title: 'error en la validacion'
+        title: 'Error en la validacion: Faltan datos!!'
       })
     } else {
-      alert("validacion exitosa")
+      alert("Validacion exitosa")
     }
   }
